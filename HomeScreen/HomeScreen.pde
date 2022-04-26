@@ -1,7 +1,7 @@
 //Global Variables
 color black=0, resetWhite=255; //Not night mode (lots of Blue)
 float rectWidth, rectHeight, ptDiameter;
-float ptX1, ptY1, ptX2, ptY2, ptX3, ptY3;
+float ptX1, ptY1, ptX2, ptY2, ptX3, ptY3; //Organized pts into rows
 float ptX4, ptY4, ptX5, ptY5, ptX6, ptY6;
 float ptX7, ptY7, ptX8, ptY8, ptX9, ptY9;
 //
@@ -16,6 +16,24 @@ void setup()
   ptDiameter = appWidth*1/50;
   ptX1 = appWidth*0;
   ptY1 = appHeight*0;
+  /*
+  ptX2 = ;
+  ptY2 = ;
+  ptX3 = ;
+  ptY3 = ;
+  ptX4 = ;
+  ptY4 = ;
+  ptX5 = ;
+  ptY5 = ;
+  ptX6 = ;
+  ptY6 = ;
+  ptX7 = ;
+  ptY7 = ;
+  ptX8 = ;
+  ptY8 = ;
+  ptX9 = ;
+  ptY9 = ;
+  */
 }//End setup
 //
 void draw() {
@@ -29,7 +47,7 @@ void draw() {
   //rect(ptX8, ptY8, rectWidth, rectHeight);
   //rect(ptX9, ptY9, rectWidth, rectHeight);
   fill(black);
-  //ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
+  ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
   //ellipse(ptX2, ptY2, ptDiameter, ptDiameter);
   //ellipse(ptX3, ptY3, ptDiameter, ptDiameter);
   //ellipse(ptX4, ptY4, ptDiameter, ptDiameter);
