@@ -36,15 +36,15 @@ void setup()
   buttonWidth[1] = appWidth*(1/3)*(1/3); //Width Denominator count = 9 ... 1/9
   buttonHeight[1] = appHeight*(1/3)*(1/3); //Height Denominator count = 9 ... 1/9
   //
-  buttonX[2] = appWidth*(3/6); //Section 2, subsection 2, numerator
-  buttonY[2] = appHeight*(2/6); //Section 2, subsection 1
+  buttonX[2] = appWidth*(3/6); //Section 2, subsection 2, numerator is 3
+  buttonY[2] = appHeight*(2/6); //Section 2, subsection 1, numerator is 2
   buttonWidth[2] = appWidth*(1/3)*(1/2); //Denominator of 6
   buttonHeight[2] = appHeight*(1/3)*(1/2); //Denominator of 6
   //
-  buttonX[3] = appWidth; //Section 3, subsection 2
-  buttonY[3] = appHeight; //Section 3, subsection 4
-  buttonWidth[3] = appWidth; //Denominator is 15
-  buttonHeight[3] = appHeight; //Denominator is 15
+  buttonX[3] = appWidth*(/15); //Section 3, subsection 2, Numerator is 
+  buttonY[3] = appHeight*(/15); //Section 3, subsection 4, Numerator is
+  buttonWidth[3] = appWidth*(1/3)*(1/5); //Denominator is 15
+  buttonHeight[3] = appHeight*(1/3)*(1/5); //Denominator is 15
   //
 }//End setup
 //
