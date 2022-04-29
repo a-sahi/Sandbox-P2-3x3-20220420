@@ -31,20 +31,20 @@ void setup()
   ptY[9] = ptY[10] = ptY[11] = ptY[12] = appHeight*2/3;
   ptY[13] = ptY[14] = ptY[15] = ptY[16] = appHeight*3/3;
   //
-  buttonX[1] = appWidth;
-  buttonY[1] = appHeight;
-  buttonWidth[1] = appWidth;
-  buttonHeight[1] = appHeight;
+  buttonX[1] = appWidth*(1/3)*(1/3); //Section 1; subsection 2, numerator is 1
+  buttonY[1] = appHeight*(1/3)*(1/3); //Section 1; subsection 2, numerator is 1
+  buttonWidth[1] = appWidth*(1/3)*(1/3); //Width Denominator count = 9 ... 1/9
+  buttonHeight[1] = appHeight*(1/3)*(1/3); //Height Denominator count = 9 ... 1/9
   //
-  buttonX[2] = appWidth;
-  buttonY[2] = appHeight;
-  buttonWidth[2] = appWidth;
-  buttonHeight[2] = appHeight;
+  buttonX[2] = appWidth*(3/6); //Section 2, subsection 2, numerator
+  buttonY[2] = appHeight*(2/6); //Section 2, subsection 1
+  buttonWidth[2] = appWidth*(1/3)*(1/2); //Denominator of 6
+  buttonHeight[2] = appHeight*(1/3)*(1/2); //Denominator of 6
   //
-  buttonX[3] = appWidth;
-  buttonY[3] = appHeight;
-  buttonWidth[3] = appWidth;
-  buttonHeight[3] = appHeight;
+  buttonX[3] = appWidth; //Section 3, subsection 2
+  buttonY[3] = appHeight; //Section 3, subsection 4
+  buttonWidth[3] = appWidth; //Denominator is 15
+  buttonHeight[3] = appHeight; //Denominator is 15
   //
 }//End setup
 //
