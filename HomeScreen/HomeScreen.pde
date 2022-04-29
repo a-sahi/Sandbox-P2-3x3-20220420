@@ -5,7 +5,7 @@ float rectWidth, rectHeight, ptDiameter;
 int numberOfPoints = 16;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
-int numberofButtons = 3; //will be 9
+int numberofButtons = 4; //will be 9
 float[] buttonX = new float[numberofButtons];
 float[] buttonY = new float[numberofButtons];
 float[] buttonWidth = new float[numberofButtons];
