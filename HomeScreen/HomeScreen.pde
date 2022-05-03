@@ -1,5 +1,7 @@
 //Global Variables
-color black=0, resetWhite=255, red=color(255, 0, 0); //Not night mode (lots of Blue)
+color black=0, resetWhite=255; //Not night mode (lots of Blue)
+color red=color(255, 0, 0), yellow=color(255, 255, 0); //Night Mode example colours, no BLUE
+Boolean turnOnYellow=false;
 float rectWidth, rectHeight, ptDiameter;
 //Points are organized by row and actually ... hint-hint ... value
 int numberOfPoints = 17;
@@ -65,6 +67,11 @@ void draw() {
   rect(ptX[10], ptY[10], rectWidth, rectHeight);
   rect(ptX[11], ptY[11], rectWidth, rectHeight);
   //
+  //HoverOver is Yellow
+  if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {} else {} //Button 1
+  if () {} else {} //Button 2
+  if () {} else {} //Button 3
+  if () {} else {} //Button 4 (Reset), the whole section
   fill(black);
   rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
   rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
