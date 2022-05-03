@@ -2,7 +2,7 @@
 color black=0, resetWhite=255, red=color(255, 0, 0); //Not night mode (lots of Blue)
 float rectWidth, rectHeight, ptDiameter;
 //Points are organized by row and actually ... hint-hint ... value
-int numberOfPoints = 16;
+int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
 int numberofButtons = 4; //will be 9
@@ -47,6 +47,9 @@ void setup()
   buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/5.0); //Denominator is 15
   //
   printArray(buttonX);
+  printArray(buttonY);
+  printArray(buttonWidth);
+  printArray(buttonHeight);
   //
 }//End setup
 //
