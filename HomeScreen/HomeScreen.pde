@@ -1,7 +1,7 @@
 //Global Variables
-color black=0, resetWhite=255; //Not night mode (lots of Blue)
+color black=0, resetWhite=255, pink=#FF00E6, brown=#BC6F2F; //Not night mode (lots of Blue)
 color red=color(255, 0, 0), yellow=color(255, 255, 0); //Night Mode example colours, no BLUE
-Boolean turnOnYellow=false;
+Boolean turnOnYellow=false, turnOnPink =false, turnOnBrown=false;
 float rectWidth, rectHeight, ptDiameter;
 //Points are organized by row and actually ... hint-hint ... value
 int numberOfPoints = 17;
@@ -59,7 +59,9 @@ void draw() {
   //Rectangles must be 3 by 3
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
   //
-  if ( turnOnYellow==true ) fill(yellow); //yellow
+  if ( turnOnYellow==true ) fill(yellow);
+  if ( turnOnPink==true ) fill(pink); //Overwrites the yellow
+  if ( turnOnBrown=true ) fill(brown); //Overwrites the yellow & pink
   rect(ptX[2], ptY[2], rectWidth, rectHeight); //Buttons change the Colour of RECT(#2)
   fill(resetWhite);
   //
@@ -140,18 +142,26 @@ void keyPressed() {
 void mousePressed() {
   if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
     println("BTN 1 Activated");
-    turnOnYellow=true;
+    if (turnOnYellow==true) { //Button will turn on and off
+      turnOnYellow=false;
+    } else {
+      turnOnYellow=true;
+    }
   }
   if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2]) {
     println("BTN 2 Activated");
+    turnOnPink=true;
   }
   if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) {
     println("BTN 3 Activated");
+    turnOnBrown=true;
   }
   //Reset Button
   if (mouseX>=ptX[3] && mouseX<=ptX[3]+rectWidth && mouseY>=ptY[3] && mouseY<=ptY[3]+rectHeight) {
     println("BTN 4 Activated");
     turnOnYellow=false;
+    turnOnPink=false;
+    turnOnBrown=false;
   }//End reset
 }//End mousePressed
 //
