@@ -59,9 +59,11 @@ void draw() {
   //Rectangles must be 3 by 3
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
   //
-  if ( turnOnYellow==true ) fill(yellow);
-  if ( turnOnPink==true ) fill(pink); //Overwrites the yellow
-  if ( turnOnBrown=true ) fill(brown); //Overwrites the yellow & pink
+  // Single Line IFs controled by order of lines
+  //if ( turnOnYellow==true ) fill(yellow);
+  //if ( turnOnPink==true ) fill(pink); //Overwrites the yellow
+  //if ( turnOnBrown=true ) fill(brown); //Overwrites the yellow & pink
+  if ( turnOnYellow==true ) {fill(yellow);} else if ( turnOnPink==true ) {fill(pink);} else if ( turnOnBrown==true ) {fill(brown);}
   rect(ptX[2], ptY[2], rectWidth, rectHeight); //Buttons change the Colour of RECT(#2)
   fill(resetWhite);
   //
@@ -150,11 +152,19 @@ void mousePressed() {
   }
   if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2]) {
     println("BTN 2 Activated");
+    if ( turnOnPink=true ) { //Button will turn on and off
+      turnOnPink=false;
+    } else {
     turnOnPink=true;
+    }
   }
   if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) {
     println("BTN 3 Activated");
-    turnOnBrown=true;
+    if ( turnOnBrown==true ) { //Button will turn on and off
+      turnOnBrown=false;
+    } else {
+      turnOnBrown=true;
+    }
   }
   //Reset Button
   if (mouseX>=ptX[3] && mouseX<=ptX[3]+rectWidth && mouseY>=ptY[3] && mouseY<=ptY[3]+rectHeight) {
