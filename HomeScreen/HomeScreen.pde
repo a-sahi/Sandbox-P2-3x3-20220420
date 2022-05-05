@@ -155,10 +155,10 @@ void mousePressed() {
   }
   if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2]) {
     println("BTN 2 Activated");
-    if ( turnOnPink=true ) { //Button will turn on and off
+    if ( turnOnPink==true ) { //Button will turn on and off
       turnOnPink=false;
     } else {
-    turnOnPink=true;
+      turnOnPink=true;
     }
   }
   if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) {
