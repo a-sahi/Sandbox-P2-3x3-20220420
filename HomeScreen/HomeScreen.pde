@@ -63,7 +63,16 @@ void draw() {
   //if ( turnOnYellow==true ) fill(yellow);
   //if ( turnOnPink==true ) fill(pink); //Overwrites the yellow
   //if ( turnOnBrown=true ) fill(brown); //Overwrites the yellow & pink
-  if ( turnOnYellow==true ) {fill(yellow);} else if ( turnOnPink==true ) {fill(pink);} else if ( turnOnBrown==true ) {fill(brown);}
+  //
+  //Example IF's that reverse order the Single Line IFs
+  if ( turnOnYellow==true ) {
+    fill(yellow);
+  } else if ( turnOnPink==true ) {
+    fill(pink);
+  } else if ( turnOnBrown==true ) {
+    fill(brown);
+  } else {
+  }
   rect(ptX[2], ptY[2], rectWidth, rectHeight); //Buttons change the Colour of RECT(#2)
   fill(resetWhite);
   //
@@ -105,12 +114,6 @@ void draw() {
     fill(black);
     rect(ptX[3], ptY[3], rectWidth, rectHeight);
   } //Button 4 (Reset), the whole section
-  fill(resetWhite); //Best Practice
-  //
-  fill(black);
-  rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
-  rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
-  rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
   fill(resetWhite); //Best Practice
   //
   fill(black);
