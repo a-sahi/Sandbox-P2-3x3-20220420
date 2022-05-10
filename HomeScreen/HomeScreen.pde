@@ -116,19 +116,19 @@ void setup()
   imageWidth = rectWidth;
   imageHeight = rectHeight;
   //
-  pic0 = loadImage ("pics/start.jpg");
-  pic1 = loadImage ("pics/Dry Climate (1).jpg"); 
-  pic2 = loadImage ("pics/Highlands Climate (1).jpg");
-  pic3 = loadImage ("pics/Polar Climate (1).jpg"); 
-  pic4 = loadImage ("pics/Temperate Continental Climate (1).jpg");
-  pic5 = loadImage ("pics/Temperate Marine Climate (1).jpg"); 
-  pic6 = loadImage ("pics/Tropical Rainy (1).jpg");
-  pic7 = loadImage ("pics/Dry Climate (2).jpg"); 
-  pic8 = loadImage ("pics/Highlands Climate (2).jpg");
-  pic9 = loadImage ("pics/Polar Climate (2).jpg");
-  pic10 = loadImage ("pics/Temperate Continental Climate (2).jpg");
-  pic11= loadImage ("pics/Temperate Marine Climate (2).jpg");
-  pic12= loadImage ("pics/Tropical Rainy (2).jpg");
+  pic0 = loadImage ("Pics/start.jpg");
+  pic1 = loadImage ("Pics/Dry Climate (1).jpg"); 
+  pic2 = loadImage ("Pics/Highlands Climate (1).jpg");
+  pic3 = loadImage ("Pics/Polar Climate (1).jpg"); 
+  pic4 = loadImage ("Pics/Temperate Continental Climate (1).jpg");
+  pic5 = loadImage ("Pics/Temperate Marine Climate (1).jpg"); 
+  pic6 = loadImage ("Pics/Tropical Rainy (1).jpg");
+  pic7 = loadImage ("Pics/Dry Climate (2).jpg"); 
+  pic8 = loadImage ("Pics/Highlands Climate (2).jpg");
+  pic9 = loadImage ("Pics/Polar Climate (2).jpg");
+  pic10 = loadImage ("Pics/Temperate Continental Climate (2).jpg");
+  pic11= loadImage ("Pics/Temperate Marine Climate (2).jpg");
+  pic12= loadImage ("Pics/Tropical Rainy (2).jpg");
   //
   image0X = width*1/3;
   image0Y = height*1/3;
