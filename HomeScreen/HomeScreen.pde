@@ -117,13 +117,13 @@ void setup()
   imageHeight = rectHeight;
   //
   pic0 = loadImage ("pics/start.jpg");
-  pic1 = loadImage ("pics/Dryclimate/Dry Climate (1).jpg"); 
+  pic1 = loadImage ("pics/Dry Climate (1).jpg"); 
   pic2 = loadImage ("pics/Highlands Climate (1).jpg");
   pic3 = loadImage ("pics/Polar Climate (1).jpg"); 
   pic4 = loadImage ("pics/Temperate Continental Climate (1).jpg");
   pic5 = loadImage ("pics/Temperate Marine Climate (1).jpg"); 
   pic6 = loadImage ("pics/Tropical Rainy (1).jpg");
-  pic7 = loadImage ("pics/Dryclimate/Dry Climate (2).jpg"); 
+  pic7 = loadImage ("pics/Dry Climate (2).jpg"); 
   pic8 = loadImage ("pics/Highlands Climate (2).jpg");
   pic9 = loadImage ("pics/Polar Climate (2).jpg");
   pic10 = loadImage ("pics/Temperate Continental Climate (2).jpg");
